@@ -28,11 +28,11 @@
         <div id="sideNav">
             <nav>
                 <ul>
-                    <li><a href="/#banner">Home</a></li>
-                    <li><a href="/#aanbod">Aanbod</a></li>
-                    <li><a href="/#lessen">Lessen</a></li>
-                    <li><a href="/#trainers">Trainers</a></li>
-                    <li><a href="/#contact">Contact</a></li>
+                    <li><a href="/#banner" id="bannerBtn">Home</a></li>
+                    <li><a href="/#aanbod" id="aanbodBtn">Aanbod</a></li>
+                    <li><a href="/#lessen" id="lessenBtn">Lessen</a></li>
+                    <li><a href="/#trainers" id="trainersBtn">Trainers</a></li>
+                    <li><a href="/#contact" id="contactBtn">Contact</a></li>
                 </ul>
             </nav>
         </div>
@@ -158,6 +158,10 @@
                 menu.src = "images/close.png";
             }
         }
+
+        document.getElementById("bannerBtn").addEventListener("click", function() {
+            window.location.href = location.pathname;
+        )}
     </script>
 
 </body>
