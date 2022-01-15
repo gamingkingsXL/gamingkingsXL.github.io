@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!--Google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <main>
+        <section id="banner">
+            <img src="images/Logo.png" class="logo">
+            <div class="banner-text">
+                <h1>Sportschool VDM</h1>
+                <p>Leuk Voor Jong En Oud In Een Gezellige Leerzame Sfeer</p>
+                <div class="banner-btn">
+                    <a href="index.html#aanbod"><span></span>Ons Aanbod</a>
+                    <a href="#"><span></span>Contact</a>
+                </div>
+            </div>
+        </section>
+
+        <div id="sideNav">
+            <nav>
+                <ul>
+                    <li><a href="index.html#banner">Home</a></li>
+                    <li><a href="index.html#aanbod">Aanbod</a></li>
+                    <li><a href="index.html#lessen">Lessen</a></li>
+                    <li><a href="index.html#trainers">Trainers</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div id="menuBtn">
+            <img src="images/menu.png" id="menu">
+        </div>
+
+        <!--aanbod-->
+        <section id="aanbod">
+            <div class="title-text">
+                <p>AANBOD</p>
+                <h2>Waarom Kiezen Voor Sportschool VDM</h2>
+            </div>
+            <div class="aanbod-box">
+                <div class="aanbod">
+                    <h1>Fantastische Trainers</h1>
+                    <div class="aanbod-desc">
+                        <div class="aanbod-icon"></div>
+                        <div class="aanbod-text">
+                            <p>Bij onze trainers ben je in goede handen.</p>
+                        </div>
+                    </div>
+                    <h1>Uitgebreide Lessen</h1>
+                    <div class="aanbod-desc">
+                        <div class="aanbod-icon"></div>
+                        <div class="aanbod-text">
+                            <p>De lessen zijn goed voor conditie, zelfvertrouwen, zelfbeheersing en zelfverdediging.</p>
+                        </div>
+                    </div>
+                    <h1>Voor Ieder Wat</h1>
+                    <div class="aanbod-desc">
+                        <div class="aanbod-icon"></div>
+                        <div class="aanbod-text">
+                            <p>De lessen zijn voor jong en oud, ook hebben we voor iedereen wat te bieden. De trainingen zijn op maandag en donderdag, de training
+                                van donderdag is meer gefocused op conditie.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="aanbod-img">
+                    <img src="images/aanbod-img.jpg">
+                </div>
+            </div>
+        </section>
+        <!--Lessen-->
+        <section id="lessen">
+            <div class="title-text">
+                <p>LESSEN</p>
+                <h2>Leskalender</h2>
+            </div>
+            <div class="table">
+                <table class="content-table">
+                    <thead>
+                        <tr>
+                            <th>DAG</th>
+                            <th>TIJDEN</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Maandag (volwassenen)</td>
+                            <td>20:30 tot 21:30</td>
+                        </tr>
+                        <tr class="active-row">
+                            <td>Donderdag (jeugd)</td>
+                            <td>18:00 tot 19:00</td>
+                        </tr>
+                        <tr>
+                            <td>Donderdag (volwassenen)</td>
+                            <td>19:00 tot 20:00</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+        <!--Trainers-->
+        <section id="trainers">
+            <div class="title-text">
+                <p>TRAINERS</p>
+                <h2>Even Voorstellen</h2>
+            </div>
+            <div class="card-container">
+                <div class="card trainer1">
+                    <div class="card-content">
+                        <h2 class="card-title">
+                            Bjorn van der Meijden
+                        </h2>
+                        <p class="card-body">
+                            HOOFDTRAINER
+                        </p>
+                    </div>
+                </div>
+                <div class="card trainer2">
+                    <div class="card-content">
+                        <h2 class="card-title">
+                            Luca van der Meijden
+                        </h2>
+                        <p class="card-body">
+                            ASSISTENT JEUGD TRAINER
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer id="contact">
+
+        </footer>
+
+    </main>
+
+    <script>
+        var menuBtn = document.getElementById("menuBtn");
+        var sideNav = document.getElementById("sideNav");
+        var menu = document.getElementById("menu");
+
+        menuBtn.onclick = function() {
+            if(sideNav.style.right == "0px") {
+                sideNav.style.right = "-250px";
+                menu.src = "images/menu.png";
+            } else {
+                sideNav.style.right = "0px";
+                menu.src = "images/close.png";
+            }
+        }
+    </script>
+
+</body>
+</html>
