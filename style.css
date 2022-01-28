@@ -567,6 +567,7 @@ footer ul {
 footer ul a {
     text-decoration: none;
     color: var(--clr-neutral-100);
+    font-size: 0.85em;
 }
 
 footer ul a:hover,
@@ -580,7 +581,7 @@ footer ul li {
 }
 
 footer ul i {
-    margin-right: 10px;
+    margin-right: 5px;
 }
 
 .copyright {
