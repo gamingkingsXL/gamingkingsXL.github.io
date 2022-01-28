@@ -589,3 +589,12 @@ footer ul i {
     padding-top: 30px;
     color: var(--clr-neutral-100);
 }
+
+@media screen and (max-width: 900px){
+    footer ul li {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
