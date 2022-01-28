@@ -26,9 +26,9 @@ body {
 }
 
 #banner {
-    background: var(--image-cover), url(images/Background.jpg);
+    background: var(--image-cover), url(images/WhatsApp\ Image\ 2022-01-23\ at\ 18.37.42.jpeg);
     background-size: cover;
-    background-position: center;
+    background-position: 50% 50%;
     height: 100vh;
 }
 
@@ -408,11 +408,14 @@ a:focus {
 .trainer1 {
     background-image: url(images/trainer1.jpg);
     background-size: cover;
+    background-position: 30% 50%;
 }
+
 
 .trainer2 {
     background-image: url(images/trainer2.jpg);
     background-size: cover;
+    background-position: center;
 }
 
 .card:hover {
@@ -484,13 +487,19 @@ a:focus {
 
 @media (hover) {
     .card-content {
-        transform: translateY(50%);
+        transform: translateY(80%);
+        transition: 0.5s ease;
+        transition-delay: 0.5s;
+    }
+
+    .trainer1 .card-content {
+        transform: translateY(76%);
         transition: 0.5s ease;
         transition-delay: 0.5s;
     }
 
     .card:hover .card-content {
-        transform: translateY(0%);
+        transform: translateY(6%);
     }
 
     .card-content > *:not(.card-title) {
@@ -513,4 +522,69 @@ a:focus {
     width: 100%;
     padding: 70px;
     background: var(--clr-neutral-900); 
+}
+
+.footer-title {
+    text-align: center;
+    color: var(--clr-accent-400);
+}
+
+.social {
+    text-align: center;
+    padding: 25px;
+    color: var(--clr-neutral-100);
+}
+
+.social a {
+    font-size: 24px;
+    color: inherit;
+    width: 40px;
+    height: 40px;
+    line-height: 38px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    margin: 0 8px;
+    opacity: 0.6;
+    transition: 0.3s ease-out;
+}
+
+.social a:hover,
+.social a:focus {
+    opacity: 1;
+}
+
+footer ul {
+    margin-top: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+footer ul a {
+    text-decoration: none;
+    color: var(--clr-neutral-100);
+}
+
+footer ul a:hover,
+footer ul a:focus {
+    color: var(--clr-accent-400);
+}
+
+footer ul li {
+    display: inline-block;
+    padding: 0 15px;
+}
+
+footer ul i {
+    margin-right: 10px;
+}
+
+.copyright {
+    text-align: center;
+    padding-top: 30px;
+    color: var(--clr-neutral-100);
 }
